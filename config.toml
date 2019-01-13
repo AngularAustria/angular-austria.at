@@ -1,0 +1,4 @@
+baseURL = "https://angular-austria.at/"
+languageCode = "en-us"
+title = "Angular Austria Association"
+theme = "hero"
