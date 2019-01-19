@@ -1,9 +1,9 @@
 .hero-image {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: right 3vw center;
   background-blend-mode: overlay;
-  background-color: $primary;
+  background-color: #fd4c4c;
   height: 400px;
   position: relative;
   .container {

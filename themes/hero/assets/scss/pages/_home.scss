@@ -1,2 +1,11 @@
 .page-home {
+
+  .purposes {
+    display: flex;
+    align-items: flex-start;
+    img {
+      width: 64px;
+      margin-right: 12px;
+    }
+  }
 }
