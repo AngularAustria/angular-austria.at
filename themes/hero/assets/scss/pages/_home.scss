@@ -3,9 +3,28 @@
   .purposes {
     display: flex;
     align-items: flex-start;
-    img {
+    img.icon {
       width: 64px;
       margin-right: 12px;
+    }
+  }
+  .purpose-photo {
+    padding: 6px;
+    border: 1px solid transparentize($primary, 0.8);
+    border-radius: 3px;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    img {
+      width: 100%;
+      max-width: 200px;
     }
   }
 }

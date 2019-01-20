@@ -5,12 +5,18 @@
   .footer-inner {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-    @include media-breakpoint-up(sm) {
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
+
+    .footer-logo {
+      filter: saturate(0%) invert(100%);
+    }
+    .footer-copy {
+      color: $gray-400;
+      text-align: right;
+      line-height: 1.2em;
+      font-size: 12px;
+      p {
+        margin-bottom: 6px;
+      }
     }
   }
   .footer-title {

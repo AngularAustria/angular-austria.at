@@ -3,11 +3,15 @@
     <div class="row">
       <div class="col-12">
         <div class="footer-inner">
-          <ul class="footer-menu">
-            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
-            <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
-          </ul>
+          <div class="footer-logo">
+            <img src="images/logo-inline-sm.png">
+          </div>
+          <div class="footer-copy">
+            <p>Angular Austria -
+              Verein zur Förderung und Unterstützung des JavaScript Frameworks Angular</p>
+            <p>1070 Wien, Neustiftgasse 79 / ZVR-Zahl: 1406516882 / UID: ATU73222906 / info@angular-austria.at</p>
+            <p><span class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</span>: Michael Hladky / Michael Bromley / Marko Jurisic / Miroslav Jonas</p>
+          </div>
         </div>
       </div>
     </div>
