@@ -1,2 +1,4 @@
-resources/_gen/*
+# TODO: can remove the generated CSS once Netlify is able to run the extended Hugo binary
+# which includes built-in Sass etc. support. See https://github.com/netlify/build-image/issues/183
+# resources/_gen/*
 .idea
