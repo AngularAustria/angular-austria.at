@@ -2,3 +2,4 @@
 # which includes built-in Sass etc. support. See https://github.com/netlify/build-image/issues/183
 # resources/_gen/*
 .idea
+public
