@@ -2,3 +2,13 @@ baseURL = "https://angular-austria.at/"
 languageCode = "en-us"
 title = "Angular Austria Association"
 theme = "hero"
+
+[[menu.main]]
+	name = "Videos"
+	url = "/videos/"
+    weight = 1
+
+[[menu.main]]
+    name = "Jobs"
+    url = "/jobs/"
+    weight = 2

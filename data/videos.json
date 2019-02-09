@@ -1,0 +1,30 @@
+[
+  {
+    "date": "October 2017",
+    "event": "Angular Vienna",
+    "speaker": "Schmuela Jacobs",
+    "title": "Angular is on Fire(base)!",
+    "youtubeId": "j7gZWzPoTz8"
+  },
+  {
+    "date": "October 2017",
+    "event": "Angular Vienna",
+    "speaker": "Manfred Steyer",
+    "title": "Building Angular Libraries",
+    "youtubeId": "3-PDzFQ1rPg"
+  },
+  {
+    "date": "September 2017",
+    "event": "Angular Vienna",
+    "speaker": "Marko Jurišić",
+    "title": "Angular Animations",
+    "youtubeId": "NC4SyGnrjPs"
+  },
+  {
+    "date": "September 2017",
+    "event": "Angular Vienna",
+    "speaker": "Manfred Steyer",
+    "title": "Through the Sound Barrier",
+    "youtubeId": "_MNDoDO4lv4"
+  }
+]
