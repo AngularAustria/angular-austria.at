@@ -2,6 +2,18 @@
 
 This is the source of the Angular Austria Association website. It is built with [Hugo](https://gohugo.io/).
 
+## Build
+
+TypeScript and Sass source files are located in the `/assets` directory. They are compiled by running webpack via:
+
+```bash
+$ yarn watch
+# or
+$ yarn build
+```
+
+This will compile the sources and output to the `/public` directory, from which Hugo will publish them to the root of the generated site.
+
 ## Videos
 
 The data for the list of videos is defined in the [./data/videos.json](./data/videos.json) file. To add / edit the list, just update the json file and commit and push the changes to trigger a deploy.

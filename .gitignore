@@ -3,3 +3,6 @@
 # resources/_gen/*
 .idea
 public
+static/main.*
+yarn-error.log
+node_modules
