@@ -1,0 +1,8 @@
+<div class="company-jobs">
+    <h4 class="company-name">{{ .company }}</h4>
+    {{ range .jobs }}
+        <div class="position">
+            <a href="{{ .link }}">{{ .description }}</a>
+        </div>
+    {{ end }}
+</div>

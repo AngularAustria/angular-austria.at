@@ -16,7 +16,11 @@ This will compile the sources and output to the `/public` directory, from which 
 
 ## Videos
 
-The data for the list of videos is defined in the [./data/videos.json](./data/videos.json) file. To add / edit the list, just update the json file and commit and push the changes to trigger a deploy.
+The data for the list of videos is defined in the [./data/videos.json](./data/videos.json) file. To  edit the list, just update the json file and commit and push the changes to trigger a deploy.
+
+## Jobs
+
+The data for the list of jobs is defined in the [./data/jobs.json](./data/jobs.json) file. To edit the list, just update the json file and commit and push the changes to trigger a deploy.
 
 ## Deployment
 
