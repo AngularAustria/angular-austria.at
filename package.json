@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "watch": "webpack -w",
-    "build": "webpack"
+    "build": "webpack && hugo"
   },
   "devDependencies": {
     "@types/node": "^11.10.4",
