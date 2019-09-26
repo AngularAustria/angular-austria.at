@@ -1,0 +1,51 @@
+.content {
+  &__jumbotron {
+    &-img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; // make sure I go behind the parent ::before
+    }
+  }
+
+  &__training {
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-hr;
+      }
+
+      @media screen and (min-width: $desktop) {
+        flex-direction: row;
+      }
+    }
+
+    &-box {
+      img {
+        height: 200px;
+        max-width: 100%;
+        object-fit: cover;
+
+        @media screen and (min-width: $desktop) {
+          margin-bottom: 0;
+          height: 410px;
+          max-width: 375px;
+        }
+      }
+      @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+          margin-right: 5rem;
+        }
+      }
+
+      p {
+        margin: 4rem 0;
+      }
+    }
+  }
+}

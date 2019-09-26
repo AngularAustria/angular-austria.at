@@ -1,33 +1,45 @@
-# angular-austria.at
+# Angular Austria Website
 
-This is the source of the Angular Austria Association website. It is built with [Hugo](https://gohugo.io/).
+This is the source of the Angular Austria Association website. It is built with [Stencil](https://stenciljs.com).
 
-## Build
-
-TypeScript and Sass source files are located in the `/assets` directory. They are compiled by running webpack via:
+## Development
 
 ```bash
-$ yarn watch
-# or
-$ yarn build
+npm i
 ```
 
-This will compile the sources and output to the `/public` directory, from which Hugo will publish them to the root of the generated site.
+```bash
+npm start
+```
 
-## Videos
+Point your Browser to http://localhost:5000
 
-The data for the list of videos is defined in the [./data/videos.json](./data/videos.json) file. To  edit the list, just update the json file and commit and push the changes to trigger a deploy.
+### Code scaffolding
 
-## Jobs
+Run `npx stencil generate` to generate a new component.
 
-The data for the list of jobs is defined in the [./data/jobs.json](./data/jobs.json) file. To edit the list, just update the json file and commit and push the changes to trigger a deploy.
+### Testing
+
+To run the unit tests once, run:
+
+```
+npm test
+```
+
+To run the unit tests and watch for file changes during development, run:
+
+```
+npm run test.watch
+```
+
+## Production Build
+
+To build the app for production, run:
+
+```bash
+npm run build_prod
+```
 
 ## Deployment
 
-Pushing any change to the `master` branch will trigger a build on Netlify.
-
-## Credits
-
-* Landing page icons made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
-* Landing page "connect" Photo by Dylan Gillis on Unsplash 
-* Landing page "organize" Photo by The Climate Reality Project on Unsplash
+Pushing any change to the `master` branch will trigger a production build and deployment to angular-austria.at

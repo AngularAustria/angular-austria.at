@@ -1,24 +1,46 @@
 {
-  "name": "angular-austria.at",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:AngularAustria/angular-austria.at.git",
-  "author": "Michael Bromley <michael@michaelbromley.co.uk>",
-  "license": "MIT",
+  "name": "angularaustria",
   "private": true,
+  "version": "0.0.1",
+  "description": "Website for angular-austria",
   "scripts": {
-    "watch": "webpack -w",
-    "build": "webpack && hugo"
+    "build": "stencil build",
+    "build_prod": "npm run build -- --prerender",
+    "proxy": "node scripts/proxy.js",
+    "serve": "stencil build --dev --watch --serve",
+    "serve_prod": "serve --single --listen 3333 ./www",
+    "start": "run-p serve proxy",
+    "start_prod": "run-p serve_prod proxy",
+    "format": "prettier --write \"./src/**/*.{html,scss,ts,tsx,json,js}\"",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "start_docker": "run-s start_docker:*",
+    "start_docker:image-build": "docker build -t angularaustria .",
+    "start_docker:container-create": "docker create -p 9979:9979 --name angularaustria angularaustria",
+    "start_docker:start": "docker start -a angularaustria",
+    "stop_docker": "run-s stop_docker:*",
+    "stop_docker:stop": "docker stop angularaustria",
+    "stop_docker:container-remove": "docker rm angularaustria",
+    "stop_docker:image-remove": "docker rmi angularaustria"
   },
+  "dependencies": {
+    "@stencil/core": "^1.3.2",
+    "@stencil/router": "^1.0.1",
+    "nice-anim": "github:Lean-Coders/nice-anim#ssr-support",
+    "svg4everybody": "^2.1.9"
+  },
+  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^11.10.4",
-    "css-loader": "^2.1.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "ts-loader": "^5.3.3",
-    "typescript": "^3.3.3333",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "@stencil/postcss": "^1.0.1",
+    "@stencil/sass": "^1.0.1",
+    "autoprefixer": "^9.6.1",
+    "http-proxy": "^1.17.0",
+    "husky": "^3.0.3",
+    "lint-staged": "^9.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "serve": "^11.1.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0"
   }
 }

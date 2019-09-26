@@ -1,0 +1,71 @@
+:host {
+  display: block;
+  text-align: left;
+
+  .meetup__card {
+    background: $white;
+    border: 1px solid rgba(46, 62, 72, 0.12);
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 4px 0 rgba(46, 62, 72, 0.12), 0 4px 12px 0 rgba(46, 62, 72, 0.12);
+    box-shadow: 0 0 4px 0 rgba(46, 62, 72, 0.12), 0 4px 12px 0 rgba(46, 62, 72, 0.12);
+    display: block;
+    padding: 3rem;
+    margin: 0 auto 4rem auto;
+    color: #585050;
+    width: auto;
+
+    @media screen and (min-width: $tab-base) {
+      width: 80%;
+    }
+
+    &--date,
+    &--attendees {
+      color: $color-primary;
+      font-size: 1.6rem;
+    }
+
+    &--venue {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.6rem;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+      }
+    }
+
+    &--attendees {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: rgba($color-primary, 0.7);
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.3rem;
+      overflow: hidden;
+      margin: 5px 0;
+
+      br {
+        content: ' ';
+      }
+      br:after {
+        content: ' ';
+      }
+    }
+  }
+}

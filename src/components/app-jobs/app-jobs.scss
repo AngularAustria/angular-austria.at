@@ -1,0 +1,34 @@
+.content {
+  &__jumbotron {
+    &-img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; // make sure I go behind the parent ::before
+    }
+  }
+
+  &__jobs {
+    &-info {
+      box-shadow: 0 0 20px $color-box-shadow-primary;
+      padding: 2rem;
+
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+
+      a {
+        display: block;
+        margin-top: 2rem;
+        color: $color-primary;
+        transition: all 0.5s;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.content {
+  &__jumbotron {
+    &-img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; // make sure I go behind the parent ::before
+    }
+  }
+
+  &__upcoming-events,
+  &__past-events {
+    &-info {
+      text-align: center;
+      a {
+        display: block;
+        width: 210px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

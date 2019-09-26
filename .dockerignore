@@ -1,0 +1,8 @@
+/.circleci
+/dist
+/infra
+/node_modules
+/www
+npm-debug.log
+.git
+.gitignore

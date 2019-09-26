@@ -1,0 +1,43 @@
+.content {
+  &__notfound {
+    text-align: center;
+    p {
+      margin-bottom: 3rem;
+    }
+
+    img {
+      height: 15rem;
+      margin-bottom: 3rem;
+    }
+
+    stencil-route-link {
+      a {
+        background: $color-primary;
+        color: $white;
+        font-family: inherit;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 16px 40px;
+        border: 1px solid $color-primary;
+        border-radius: 28px;
+        outline: 0;
+        transition: all 0.15s ease;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+
+        @media screen and (min-width: $phone-mini) {
+          font-size: 1.6rem;
+        }
+
+        &:hover {
+          background: $white;
+          color: $color-primary;
+          border: 1px solid $color-primary;
+        }
+      }
+    }
+  }
+}
