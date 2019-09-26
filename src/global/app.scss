@@ -1,0 +1,291 @@
+@import '../sass/abstracts/variables';
+
+/** FONTS ***************************************************************************************************/
+@font-face {
+  font-family: $font-headlines;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sequel Regular'), local('Sequel-Regular'),
+    url('../assets/fonts/sequel-regular.woff') format('woff'),
+    url('../assets/fonts/sequel-regular.ttf') format('truetype');
+}
+
+/*
+@font-face {
+  font-family: $font-text-regular;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sonny Gothic Regular'),
+    url('../assets/fonts/sonny-gothic-condensed-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-text-bold;
+  font-weight: $font-weight-bold;
+  font-display: swap;
+  src: local('Sonny Gothic Bold'), url('../assets/fonts/sonny-gothic-condensed-bold.woff') format('woff');
+}
+*/
+/** BASE **********************************************************************************************************/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px, 10/16 = 62.5%
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-text-regular;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  @media screen and (min-width: $phone) {
+    font-size: 1.6rem;
+  }
+}
+
+section {
+  padding-top: 6rem;
+
+  @media screen and (min-width: $tab-base) {
+    padding-top: 10rem;
+  }
+
+  &:last-child {
+    padding-bottom: 6rem;
+
+    @media screen and (min-width: $tab-base) {
+      padding-bottom: 10rem;
+    }
+  }
+}
+
+h1 {
+  font-family: $font-family-headlines;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  color: $white;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 1px;
+  @media screen and (min-width: $tab-base) {
+    font-size: 3.4rem;
+  }
+  @media screen and (min-width: $tab-land) {
+    font-size: 4.8rem;
+  }
+}
+
+h2 {
+  font-family: $font-family-headlines;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: $color-primary;
+  text-align: center;
+  margin-bottom: 4rem;
+  @media screen and (min-width: $tab-base) {
+    font-size: 4.8rem;
+  }
+}
+
+h3,
+h4 {
+  font-family: $font-family-text-bold;
+  font-weight: $font-weight-bold;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 1px black;
+  line-height: 1.6;
+  @media screen and (min-width: $tab-base) {
+    font-size: 2.4rem;
+  }
+}
+
+h4 {
+  text-shadow: none;
+}
+
+h5 {
+  font-family: $font-family-text-bold;
+  font-weight: $font-weight-bold;
+  font-size: 1.6rem;
+  margin-bottom: 1.7rem;
+  @media screen and (min-width: $tab-base) {
+    font-size: 1.8rem;
+  }
+}
+
+hr {
+  border: 0.5px solid $color-hr;
+  margin: 5rem 0;
+}
+
+.wrapper--base {
+  position: relative;
+  margin: 0 3rem;
+
+  @media screen and (min-width: $tab-land) {
+    margin: 0 10rem;
+  }
+}
+/** JUMBOTRON LAYOUT***************************************************************************************************/
+
+.content__jumbotron,
+.content__jumbotron__big {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  color: $white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: $tab-base) {
+    height: 445px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, $black, $black);
+    opacity: 0.75;
+  }
+
+  &-text {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: $tab-base) {
+      height: 455px;
+      width: 60%;
+    }
+
+    h3 {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.content__jumbotron__big {
+  height: 350px;
+
+  @media screen and (min-width: $tab-base) {
+    height: 675px;
+  }
+
+  &-text {
+    height: 400px;
+
+    @media screen and (min-width: $tab-base) {
+      height: 645px;
+    }
+
+    h1 {
+      @media screen and (min-width: $tab-base) {
+        font-size: 5.8rem;
+      }
+    }
+  }
+}
+
+/** BUTTONS***************************************************************************************************/
+.btn {
+  &:link,
+  &:visited {
+    background: $color-primary;
+    color: $white;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    border: 1px solid $color-primary;
+    border-radius: 28px;
+    outline: 0;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    @media screen and (min-width: $phone-mini) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &:hover {
+    background: $white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+}
+
+button {
+  background: $color-primary;
+  color: $white;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border: 1px solid $color-primary;
+  border-radius: 28px;
+  outline: 0;
+  transition: all 0.15s ease;
+  cursor: pointer;
+
+  @media screen and (min-width: $phone-mini) {
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    background: $white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+}
+
+/** FORMS ***************************************************************************************************/
+/* Reset Select */
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Reset Input */
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+  appearance: none;
+  border-radius: 0;
+}

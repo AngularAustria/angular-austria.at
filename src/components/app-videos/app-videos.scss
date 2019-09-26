@@ -1,0 +1,71 @@
+.content {
+  &__jumbotron {
+    &-img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; // make sure I go behind the parent ::before
+    }
+  }
+
+  &__videos {
+    &-boxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @media screen and (min-width: $tab-base) {
+        flex-direction: row;
+      }
+    }
+
+    &-box {
+      position: relative;
+      margin: 1rem 1rem;
+      padding: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0 0 20px $color-box-shadow-primary;
+
+      @media screen and (min-width: $phone-mini) {
+        width: 370px;
+        height: 400px;
+      }
+
+      iframe {
+        height: 160px;
+        max-width: 100%;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: $phone-mini) {
+          height: 230px;
+        }
+      }
+
+      .tag {
+        background-color: $color-primary;
+        color: $white;
+        padding: 1rem 1.5rem;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        font-size: 1.2rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+        color: $color-secondary;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

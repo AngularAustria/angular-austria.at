@@ -1,0 +1,33 @@
+//Colors
+$white: #fff;
+$black: #000;
+
+$color-primary: #dd0932;
+$color-secondary: #353535;
+
+$color-bg-overlay: rgba(0, 0, 0, 0.75);
+$color-box-shadow-primary: rgba(0, 0, 20, 0.1);
+$color-hr: #e8e8e8;
+
+//Devices
+//1em = 16px
+$phone-mini: 25em; // 400px
+$phone: 37.5em; // 600px
+$tab-base: 50em; // 800px
+$desktop: 64em; // 1024px
+$tab-land: 75em; // 1200px
+$desktop-wide: 112.5em; // 1800px
+
+// Fonts
+$font-headlines: 'Sequel';
+$font-family-headlines: $font-headlines, sans-serif;
+
+// $font-text-regular: 'Sonny Gothic Regular';
+$font-text-regular: 'Helvetica Neue';
+$font-family-text-regular: $font-text-regular, sans-serif;
+
+// $font-text-bold: 'Sonny Gothic Bold';
+$font-text-bold: $font-text-regular;
+$font-family-text-bold: $font-text-bold, sans-serif;
+// $font-family-text-bold: $font-family-text-regular;
+$font-weight-bold: 700;

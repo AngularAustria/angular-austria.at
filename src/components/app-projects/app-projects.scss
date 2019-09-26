@@ -1,0 +1,76 @@
+.content {
+  &__jumbotron {
+    background-image: url('../../assets/imgs/projects-bg.jpg');
+  }
+
+  &__projects {
+    &-boxes {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+
+      @media screen and (min-width: $tab-base) {
+        flex-direction: row;
+      }
+    }
+
+    &-box {
+      position: relative;
+      margin: 1rem 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      transition: all 0.5s ease;
+
+      @media screen and (min-width: $phone) {
+        width: 380px;
+      }
+
+      @media screen and (min-width: $tab-base) {
+        margin: 1rem 1rem;
+      }
+
+      img {
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+
+        @media screen and (min-width: $phone) {
+          height: 380px;
+        }
+      }
+
+      &-hover {
+        display: none;
+      }
+
+      &:hover {
+        background-color: $white;
+
+        img {
+          opacity: 0.1;
+        }
+
+        .content__projects-box-hover {
+          @include vertical-horizontal-center;
+          display: block;
+          text-align: center;
+
+          h4 {
+            color: $black;
+            margin-bottom: 3rem;
+          }
+
+          span {
+            color: $black;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
