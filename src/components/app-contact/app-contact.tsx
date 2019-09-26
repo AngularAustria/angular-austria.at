@@ -9,24 +9,30 @@ export class AppContact {
     return (
       <div class="app-contact">
         <div class="content__jumbotron">
-          <img src="assets/imgs/contact-bg.jpg" alt="Angular Meetup Group" class="content__jumbotron-img"/>
+          <img
+            src="assets/imgs/contact-bg.jpg"
+            alt="Angular Meetup Group"
+            class="content__jumbotron-img"
+          />
           <div class="content__jumbotron-text wrapper--base">
             <h1>Contact us</h1>
           </div>
         </div>
         <section class="content__contact wrapper--base">
           <div class="content__contact-info">
-            <nice-anim direction="up" duration={500} trigger-distance="10%">
+            <nice-anim direction="up" duration={500} trigger-distance="10">
               <h2>Location</h2>
               <span>Neustiftgasse 79</span>
               <span>1070 Vienna</span>
             </nice-anim>
           </div>
           <div class="content__contact-info">
-            <nice-anim direction="up" duration={500}>
+            <nice-anim direction="up" duration={500} triggerDistance="10">
               <h2>E-Mail</h2>
               <span>
-                <a href="mailto:info@angular-austria.at">info@angular-austria.at</a>
+                <a href="mailto:info@angular-austria.at">
+                  info@angular-austria.at
+                </a>
               </span>
             </nice-anim>
           </div>

@@ -126,7 +126,11 @@ export class AppVideos {
     return (
       <div class="app-videos">
         <div class="content__jumbotron">
-          <img src="assets/imgs/videos-bg.jpg" alt="Angular Meetup Group" class="content__jumbotron-img"/>
+          <img
+            src="assets/imgs/videos-bg.jpg"
+            alt="Angular Meetup Group"
+            class="content__jumbotron-img"
+          />
           <div class="content__jumbotron-text wrapper--base">
             <h1>Angular Talks from our Meetup</h1>
           </div>
@@ -134,13 +138,17 @@ export class AppVideos {
         <section class="content__videos wrapper--base">
           <div class="content__videos-boxes">
             {this.videosList.map(videoList => (
-              <nice-anim direction="up" duration={500}>
-              <div class="content__videos-box">
-                <iframe src={videoList.videoUrl} frameBorder="0" allowFullScreen></iframe>
-                <span class="tag">{videoList.tag}</span>
-                <h4>{videoList.topic}</h4>
-                <span>{videoList.speaker}</span>
-              </div>
+              <nice-anim direction="up" duration={500} triggerDistance="10">
+                <div class="content__videos-box">
+                  <iframe
+                    src={videoList.videoUrl}
+                    frameBorder="0"
+                    allowFullScreen
+                  ></iframe>
+                  <span class="tag">{videoList.tag}</span>
+                  <h4>{videoList.topic}</h4>
+                  <span>{videoList.speaker}</span>
+                </div>
               </nice-anim>
             ))}
           </div>
