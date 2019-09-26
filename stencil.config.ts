@@ -6,6 +6,9 @@ import autoprefixer from 'autoprefixer';
 export const config: Config = {
   globalStyle: 'src/global/app.scss',
   globalScript: 'src/global/app.ts',
+  copy: [
+    { src: '_redirects' },
+  ],
   outputTargets: [
     {
       type: 'www',
