@@ -12,7 +12,11 @@ export class AppFooter {
           <div class="content__footer-text wrapper--base">
             <div class="content__footer-info">
               <stencil-route-link url="/home">
-                <img class="logo" src="../../assets/imgs/logo.svg" alt="Angular Austria Logo" />
+                <img
+                  class="logo"
+                  src="../../assets/imgs/logo.svg"
+                  alt="Angular Austria Logo"
+                />
                 <span>
                   Angular
                   <br />
@@ -22,14 +26,20 @@ export class AppFooter {
                 </span>
               </stencil-route-link>
               <span class="info_text">
-                Angular Austria - Verein zur Förderung und Unterstützung des JavaScript Frameworks Angular
+                Angular Austria - Verein zur Förderung und Unterstützung des
+                JavaScript Frameworks Angular
               </span>
               <span class="info_text">
                 Neustiftgasse 79, 1070 Wien
                 <br />
-                <a href="mailto:info@angular-austria.at">info@angular-austria.at</a>
+                <a href="mailto:info@angular-austria.at">
+                  info@angular-austria.at
+                </a>
               </span>
-              <span class="info_text">© 2019 Angular Austria Association. Build by [Lean-Coders GmbH]</span>
+              <span class="info_text">
+                © 2019 Angular Austria Association. Build by{' '}
+                <a href="https://www.lean-coders.at/">[Lean-Coders GmbH]</a>
+              </span>
             </div>
             <div class="content__footer-links">
               <h5>Useful Links</h5>
@@ -44,7 +54,9 @@ export class AppFooter {
                   <stencil-route-link url="/events">Events</stencil-route-link>
                 </li>
                 <li>
-                  <stencil-route-link url="/contact">Contact</stencil-route-link>
+                  <stencil-route-link url="/contact">
+                    Contact
+                  </stencil-route-link>
                 </li>
               </ul>
             </div>
@@ -81,10 +93,14 @@ export class AppFooter {
               <h5>Legal</h5>
               <ul class="links-nav">
                 <li>
-                  <stencil-route-link url="/privacy">Privacy</stencil-route-link>
+                  <stencil-route-link url="/privacy">
+                    Privacy
+                  </stencil-route-link>
                 </li>
                 <li>
-                  <stencil-route-link url="/imprint">Imprint</stencil-route-link>
+                  <stencil-route-link url="/imprint">
+                    Imprint
+                  </stencil-route-link>
                 </li>
               </ul>
             </div>

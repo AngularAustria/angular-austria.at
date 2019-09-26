@@ -26,7 +26,11 @@ export class AppTraining {
     return (
       <div class="app-training">
         <div class="content__jumbotron">
-          <img src="assets/imgs/trainings-bg.jpg" alt="Angular Meetup Group" class="content__jumbotron-img"/>
+          <img
+            src="assets/imgs/trainings-bg.jpg"
+            alt="Angular Meetup Group"
+            class="content__jumbotron-img"
+          />
           <div class="content__jumbotron-text wrapper--base">
             <h1>Our Training</h1>
           </div>
@@ -35,10 +39,14 @@ export class AppTraining {
           {this.trainingsList.map(trainingList => (
             <div class="content__training-info">
               <div class="content__training-box">
-                <img src={trainingList.imgUrl} alt={trainingList.imgAlt} loading="lazy" />
+                <img
+                  src={trainingList.imgUrl}
+                  alt={trainingList.imgAlt}
+                  loading="lazy"
+                />
               </div>
               <div class="content__training-box">
-                <nice-anim direction="up" duration={500}>
+                <nice-anim direction="up" duration={500} triggerDistance="10">
                   <h4>{trainingList.header}</h4>
                   <p>{trainingList.description}</p>
                 </nice-anim>

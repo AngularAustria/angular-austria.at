@@ -11,7 +11,7 @@ export class AppTeam {
       imgAlt: 'Image of Michael Hladky',
       name: 'Michael Hladky',
       description:
-        'Michael Hladky is a trainer, consultant, developer, meet-up organizer, moderator and OSS enthusiast. He loves to discover new technologies, and his main interests are Angular and Ionic. When he\'s not programming, he likes to travel the world.',
+        "Michael Hladky is a trainer, consultant, developer, meet-up organizer, moderator and OSS enthusiast. He loves to discover new technologies, and his main interests are Angular and Ionic. When he's not programming, he likes to travel the world.",
       twitterUrl: 'https://twitter.com/Michael_Hladky',
       linkedInUrl: 'https://at.linkedin.com/in/michael-hladky-519340148',
     },
@@ -48,7 +48,11 @@ export class AppTeam {
     return (
       <div class="app-team">
         <div class="content__jumbotron">
-          <img src="assets/imgs/team-bg.jpg" alt="Angular Meetup Group" class="content__jumbotron-img"/>
+          <img
+            src="assets/imgs/team-bg.jpg"
+            alt="Angular Meetup Group"
+            class="content__jumbotron-img"
+          />
           <div class="content__jumbotron-text wrapper--base">
             <h1>Our Team</h1>
           </div>
@@ -57,10 +61,14 @@ export class AppTeam {
           {this.teamMembersList.map(teamMemberList => (
             <div class="content__team-info">
               <div class="content__team-box">
-                <img src={teamMemberList.imgUrl} alt={teamMemberList.imgAlt} loading="lazy" />
+                <img
+                  src={teamMemberList.imgUrl}
+                  alt={teamMemberList.imgAlt}
+                  loading="lazy"
+                />
               </div>
               <div class="content__team-box">
-                <nice-anim direction="up" duration={500}>
+                <nice-anim direction="up" duration={500} triggerDistance="10">
                   <h4>{teamMemberList.name}</h4>
                   <p>{teamMemberList.description}</p>
                   <ul class="content__team-social">
