@@ -122,18 +122,14 @@ export class AppHome {
               <a href="https://www.apc.co.at/">
                 <img src="../../assets/imgs/sponsors/apc.png" alt="APC Logo" />
               </a>
+              <a href="https://www.lean-coders.at/">
+                <img src="../../assets/imgs/sponsors/lean-coders.svg" alt="Lean-Coders Logo" />
+              </a>              
               <a href="https://25th-floor.com/">
                 <img
                   class="small_logo"
                   src="../../assets/imgs/sponsors/25th-floor.svg"
                   alt="25th Floor Logo"
-                />
-              </a>
-              <a href="https://www.lean-coders.at/">
-                <img
-                  class="small_logo"
-                  src="../../assets/imgs/sponsors/lean-coders.svg"
-                  alt="Lean-Coders Logo"
                 />
               </a>
             </div>
