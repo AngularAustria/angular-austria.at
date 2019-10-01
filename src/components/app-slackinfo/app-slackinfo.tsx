@@ -10,7 +10,7 @@ export class AppSlackinfo {
       <div class="app-slackinfo">
         <div class="content__slackinfo wrapper--base">
           <h2>Join us on</h2>
-          <a href="#">
+          <a href="http://angularaustria.slack.com">
             <img src="../../assets/imgs/icon-slack_full.svg" alt="Full Slack Icon" />
           </a>
           <p>Join our slack channel to unlock the full community power!</p>
