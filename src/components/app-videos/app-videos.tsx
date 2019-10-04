@@ -132,7 +132,7 @@ export class AppVideos {
             class="content__jumbotron-img"
           />
           <div class="content__jumbotron-text wrapper--base">
-            <h1>Angular Talks from our Meetup</h1>
+            <h1>Angular Talks from our Meetups and Community</h1>
           </div>
         </div>
         <section class="content__videos wrapper--base">
