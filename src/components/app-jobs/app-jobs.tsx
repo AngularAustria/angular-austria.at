@@ -52,6 +52,11 @@ export class AppJobs {
             'https://www.apa-it.at/Site/jobs/Fullstack_Developer_fuer_Webprojekte.de.html',
           description: 'Fullstack Developer für Webprojekte (m/w)',
         },
+        {
+          url: 'https://www.gentics.com/genticscms/Lead-Developer-Angular.de.html',
+          description: 'Lead Angular Developer (w/m/x)'
+        }
+        
       ],
     },
     {
