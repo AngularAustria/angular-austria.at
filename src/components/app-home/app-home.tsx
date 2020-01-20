@@ -15,9 +15,9 @@ export class AppHome {
   public wwdsList: WWDSEntry[] = [
     {
       imgUrl: '../../assets/imgs/photo-connect.jpg',
-      imgAlt: 'Connect People Image',
-      header: 'Conntect',
-      description: 'We connect people & organizations',
+      imgAlt: 'Conect People Image',
+      header: 'Conect',
+      description: 'We conect people & organizations',
     },
     {
       imgUrl: '../../assets/imgs/photo-support.jpeg',
@@ -101,7 +101,7 @@ export class AppHome {
             <h2>Our Sponsors</h2>
             <span>
               Our community support activities would not be possible without the
-              support of our sponsors:
+              support of our partners:
             </span>
             <div class="content__sponsors-logos">
               <a href="https://www.anexia-it.com/">
